@@ -1,0 +1,98 @@
+* {box-sizing: border-box}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.card-hab {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 15px 25px;
+  box-shadow: 0px 5px 25px 0px rgba(3, 2, 66, 0.25);
+  border: 2px solid #37568c; 
+  border-radius: 5px;
+}
+
+.row1 {
+  display: flex;
+  margin-top: 15px;
+}
+
+.row {
+  width: 50%;
+  margin: 0 15px;
+}
+
+.texto {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #37568c;  
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  height: 7px;
+  background-color: #37568c;
+  margin-top: 10px;
+  animation: bargrow 2s forwards; 
+}
+
+.autocad {
+  width: 90%;  
+}
+
+.max {
+  width: 75%;  
+}
+
+.css, .html, .boot {
+  width: 45%;
+}
+
+.photos {
+  width: 70%;
+}
+
+@keyframes bargrow {
+  0% {
+    width: 0;
+  }
+  
+  100% {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .card-hab {
+    width: 75%;
+    padding: 15px;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .row {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .row span {
+    font-size: 10px;
+  } 
+}
